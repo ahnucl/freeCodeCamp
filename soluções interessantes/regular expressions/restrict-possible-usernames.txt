@@ -1,0 +1,11 @@
+let username = "JackOfAllTrades";
+let userCheck = /^\D\D+\d*$|^\D\d\d+$/ ; // Change this line
+let result = userCheck.test(username);
+
+console.log("B277adUs3rna4654".match(userCheck));
+
+/* running tests
+Your regex should match Jo
+Your regex should not match BadUs3rnam3
+Your regex should not match c57bT3
+// tests completed */
