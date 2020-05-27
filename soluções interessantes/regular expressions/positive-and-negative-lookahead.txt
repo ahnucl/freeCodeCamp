@@ -1,0 +1,10 @@
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6,})(?=^\D)(?=\w*\d\d)/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+console.log(result);
+console.log(sampleWord.match(pwRegex));
+console.log("-----")
+console.log("bana12".match(pwRegex));
+console.log("abc123".match(pwRegex));
+console.log("astr1on11aut".match(pwRegex));
