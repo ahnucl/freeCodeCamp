@@ -1,0 +1,16 @@
+function titleCase(str) {
+
+  let arrStr = str.toLowerCase().split(' ');
+  //console.log(arrStr);
+  let arr = arrStr.map( (value) => 
+    value.replace(value.charAt(0), (match) => match.toUpperCase())
+  );
+  
+  return arr.join(' ');
+  
+
+  // Tentando fazer essa com expressoes regulares
+  //return str.toLowerCase().replace( /\D(?=\D*\s)/g, (match) => match.toUpperCase() );
+}
+
+console.log(titleCase("I'm a little tea pot"));
