@@ -1,0 +1,21 @@
+function getIndexToIns(arr, num) {
+  let ret = 0;
+  const sortedArr = [...arr].sort( (a,b) => a-b );
+  
+  // for(let i = 0; i < sortedArr.length; i++) {
+  //     console.log(i,ret, sortedArr[i]);
+  //   if(num > sortedArr[i]) {
+  //     ret = i + 1;
+  //   } 
+  // }
+  
+  ret = sortedArr.reduce( ((acc, cur, idx) => num > cur ? idx + 1 : acc) , 0);
+
+  return ret;
+}
+
+// console.log(getIndexToIns([40, 60], 50));
+// console.log(getIndexToIns([40, 60, 30, 45], 50));
+console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
+// console.log(getIndexToIns([3, 10, 5], 3));
+console.log(getIndexToIns([5, 3, 20, 3], 5));
