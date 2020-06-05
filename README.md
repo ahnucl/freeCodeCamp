@@ -3,4 +3,4 @@
 
 ## Notas
 
-![Sobre atributo alt de img e acessibilidade]('/misc/alt_acessibilidade.png')
+![Sobre atributo alt de img e acessibilidade]('./misc/alt_acessibilidade.png')
